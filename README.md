@@ -1,5 +1,6 @@
 # docker-samples
-Sample setup with a container running an OverOps remote collector and a container running an application monitored by an OverOps agent that reports to the remote collector container
+Sample setup with a container running an OverOps remote collector and a container running an application monitored by an OverOps agent that reports to the remote collector container  
+Tim Veil has mored varied samples (SaaS, Hybrid, On-prem). This is for my own benefit.
 
 ## attach.sh 
 Script that lets you jump into a shell session on any running container.  
