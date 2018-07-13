@@ -26,3 +26,8 @@ Each folder contains the following:
 * **Dockerfile** the dockerfile that has the commands to create the proper image
 * **build.sh** a script that builds the Dockerfile into an image
 * **run.sh** a script that runs the image for that folder as a detached conatiner  with the proper environmental variables and port mappings
+* Any local files the docker image may need. E.g. agent has *takipi.deb* which is copied to the image during build and is used to install the agent files 
+  
+To get this sample running
+* Modify collector/build.sh so that *--build-arg TAKIPI_SECRET_KEY=YOURKEY* uses your key
+* Then run the scripts in this order: collector/build.sh ; collector/run.sh ; agent/build.sh ; agent/run.sh
