@@ -31,3 +31,10 @@ Each folder contains the following:
 To get this sample running
 * Modify collector/build.sh so that *--build-arg TAKIPI_SECRET_KEY=SAMPLE_KEY* uses your key in place of the value occupied by the *SAMPLE_KEY*
 * Then run the scripts in this order: collector/build.sh ; collector/run.sh ; agent/build.sh ; agent/run.sh
+* Make sure there were no errors when running any of the build or run scripts.
+* Run the following to verify all is working  
+$ docker ps  
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                    NAMES  
+6c2898141980        agent               "/bin/sh -c 'java -a…"   2 minutes ago       Up 2 minutes                                 suspicious_johnson  
+bd6b2e78fb55        collector           "/bin/sh -c '/opt/ta…"   2 minutes ago       Up 2 minutes        0.0.0.0:6060->6060/tcp   silly_brattain  
+
