@@ -29,5 +29,5 @@ Each folder contains the following:
 * Any local files the docker image may need. E.g. agent has *takipi.deb* which is copied to the image during build and is used to install the agent files 
   
 To get this sample running
-* Modify collector/build.sh so that *--build-arg TAKIPI_SECRET_KEY=YOURKEY* uses your key
+* Modify collector/build.sh so that *--build-arg TAKIPI_SECRET_KEY=SAMPLE_KEY* uses your key in place of the value occupied by the *SAMPLE_KEY*
 * Then run the scripts in this order: collector/build.sh ; collector/run.sh ; agent/build.sh ; agent/run.sh
